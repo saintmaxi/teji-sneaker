@@ -996,7 +996,7 @@ body {
 
   .newpopup {
     width: 80vw;
-    height: 75vh;
+    /* height: 75vh; */
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -1028,7 +1028,7 @@ body {
 @media screen and (min-width: 1440px) {
   .newpopup {
     width: 70vw;
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .upperpopupwrapper {
@@ -1143,7 +1143,7 @@ body {
   .newpopup {
     bottom: auto;
     width: 90vw;
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .rangediv {
@@ -1260,7 +1260,7 @@ body {
   .newpopup {
     bottom: auto;
     overflow: hidden;
-    height: 85vh;
+    /* height: 85vh; */
   }
 
   .upperpopupwrapper {
@@ -1392,7 +1392,7 @@ body {
   .newpopup {
     bottom: auto;
     width: 95vw;
-    height: 95vh;
+    min-height: 95vh;
   }
 
   .upperpopupwrapper {
