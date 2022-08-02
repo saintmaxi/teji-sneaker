@@ -796,7 +796,7 @@ body {
 
 .pricediv {
   width: 100%;
-  position: relative;
+  position: relative !important;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1520,7 +1520,6 @@ body {
     left: auto;
     top: 0%;
     width: 98%;
-    right: 80px;
     bottom: 0%;
   }
 
