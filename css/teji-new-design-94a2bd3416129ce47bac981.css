@@ -806,7 +806,7 @@ body {
 }
 
 .bold-text-5 {
-  line-height: 2.5;
+  line-height: 1;
 }
 
 .heading-upper {
@@ -1088,7 +1088,7 @@ body {
 
   .buttonconnectwallet {
     font-size: 14px;
-    line-height: 2.54px;
+    line-height: 1;
   }
 
   .hide-on-mobile {
