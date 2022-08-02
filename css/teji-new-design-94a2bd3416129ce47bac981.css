@@ -1123,6 +1123,7 @@ body {
   }
 
   .socialiconswrapper {
+    padding-bottom: 15px;
     margin: auto;
     position: initial;
   }
