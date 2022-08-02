@@ -1107,7 +1107,7 @@ body {
   /* saintmaxi styling */
 
   .paragraph-description {
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     padding-bottom: 10px;
     padding-top: 10px;
