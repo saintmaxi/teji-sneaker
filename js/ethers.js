@@ -119,8 +119,11 @@ const mint = async () => {
         else if ((error.message).includes("Contract is paused")) {
             await displayErrorMessage(`Error: Mint not live yet!`)
         }
-        else if ((error.message).includes("denied transaction")) {
-            console.log("Tx denied by user");
+        else if ((error.message).includes("User denied transaction signature")) {
+            console.log("Transaction rejected.");
+        }
+        else if ((error.message).includes("User rejected the transaction")) {
+            console.log("Transaction rejected.");
         }
         else if ((error.message).includes("insufficient funds")) {
             await displayErrorMessage(`Error: Insuffient ETH to mint!`)
@@ -186,7 +189,7 @@ const waitForTransaction = async (tx_) => {
 };
 
 // Resuming UI display, refreshing market for pending txs across pages
-var pendingTransactions = localStorage.getItem("SigOthersPendingTxs");
+var pendingTransactions = localStorage.getItem("TejiPendingTxs");
 
 if (!pendingTransactions) {
     pendingTransactions = new Set();
@@ -199,11 +202,11 @@ else {
     for (let i = 0; i < pendingTxArray.length; i++) {
         waitForTransaction(pendingTxArray[i]);
     }
-    localStorage.removeItem("SigOthersPendingTxs");
+    localStorage.removeItem("TejiPendingTxs");
 }
 
 function cachePendingTransactions() {
-    localStorage.setItem("SigOthersPendingTxs", JSON.stringify(Array.from(pendingTransactions)));
+    localStorage.setItem("TejiPendingTxs", JSON.stringify(Array.from(pendingTransactions)));
 }
 
 function startLoading(tx) {
@@ -221,9 +224,11 @@ async function endLoading(tx, txStatus) {
     $(`#loading-div-${txHash}`).addClass("blinking");
     if (txStatus == 1) {
         $(`#loading-div-${txHash}`).addClass("success");
+        await displayResultPopup(1);
     }
     else if (txStatus == 0) {
         $(`#loading-div-${txHash}`).addClass("failure");
+        await displayResultPopup(0);
     }
     $(`#loading-div-${txHash}`).append(`TRANSACTION ${status}.<br>VIEW ON ETHERSCAN.`);
     await sleep(7000);
