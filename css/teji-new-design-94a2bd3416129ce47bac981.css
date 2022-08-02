@@ -615,11 +615,11 @@ body {
   align-items: center;
   border: 10px solid #000;
   border-radius: 0px;
-  background-color: #f6ff01;
   opacity: 1;
 }
 
 .lowerpopupwrapper {
+  background-color: white;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -648,7 +648,8 @@ body {
   display: flex;
   width: 100%;
   height: auto;
-  padding-top: 25px;
+  background-color: #f6ff01;
+  padding-top: 10px;
   padding-bottom: 10px;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
@@ -1083,6 +1084,10 @@ body {
   .backdrop-img {
   }
 
+  .paragraphdiv strong {
+    font-size: 15px;
+  }
+
   .down {
     height: initial;
     min-height: 35vh;
@@ -1133,7 +1138,7 @@ body {
   }
 
   .subheadingmintquantitytext {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .subheadingfreeshipping {
@@ -1421,7 +1426,9 @@ body {
   }
 
   .mintingvalues {
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-bottom: 0;
+    line-height: 20px;
   }
 
   .rangediv {
