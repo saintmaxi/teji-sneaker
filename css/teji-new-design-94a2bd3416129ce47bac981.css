@@ -5,6 +5,14 @@ body {
   line-height: 20px;
 }
 
+#account {
+  z-index: 99999;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .centerwrapper {
   position: relative;
   left: auto;
@@ -471,13 +479,15 @@ body {
 }
 
 .buttonconnectwallet {
+  font-size: 1.5vw;
+  line-height: 1.5vw;
   padding-top: 5px;
   padding-bottom: 5px;
   border: 2px solid #000;
   border-radius: 20px;
   background-color: #f6ff01;
   color: #000;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
@@ -492,7 +502,7 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex !important;
   width: 250px;
   height: 70px;
   -webkit-justify-content: space-around;
@@ -502,6 +512,11 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.socialiconswrapper img:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .bold-text-3 {
@@ -927,16 +942,20 @@ body {
 /* saintmaxi styling */
 
 .hide-on-mobile {
-  display: none;
+  display: block !important;
+}
+
+.hide-on-desktop {
+  display: none !important;
 }
 
 .wrapperareainner {
-  height: initial;
+  height: 2vw;
 }
 
 .warningareaouter {
-  font-size: 3vw;
-  line-height: 3vw;
+  font-size: 1vw;
+  line-height: 2vw;
   height: initial;
 }
 
@@ -1067,8 +1086,17 @@ body {
 @media screen and (max-width: 991px) {
   /* saintmaxi styling */
 
+  .buttonconnectwallet {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
   .hide-on-mobile {
-    display: block;
+    display: none !important;
+  }
+
+  .hide-on-desktop {
+    display: block !important;
   }
 
   .wrapperareainner {
@@ -1108,12 +1136,23 @@ body {
     top: 40px;
   }
 
+  .stamp {
+    top: 115px;
+    left: 90px;
+  }
+
   .imgtop1 {
+    position: absolute;
+    top: 75px;
+    left: 20px;
     display: block;
   }
 
   .imagetop2 {
     display: block;
+    position: absolute;
+    top: 130px;
+    right: 10px;
   }
 
   .heading {
@@ -1286,10 +1325,11 @@ body {
   }
 
   .bold-text-5 {
-    font-size: 1em;
+    font-size: 0.6em !important;
   }
 
   .heading-upper {
+    margin-top: 0;
     font-size: 1.5em;
   }
 
@@ -1344,7 +1384,7 @@ body {
   }
 
   .officialtejiproduct {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .html-embed {
