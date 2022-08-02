@@ -787,7 +787,7 @@ body {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
-  align-items: flex-end;
+  align-items: center;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -1292,7 +1292,7 @@ body {
   }
 
   .mintstatusdiv {
-    top: 9%;
+    top: 7%;
     width: 30%;
     height: 30%;
   }
@@ -1395,6 +1395,9 @@ body {
 
   .rightpopup {
     padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-width: 5px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
