@@ -49,7 +49,7 @@ body {
   font-size: 2.4vw;
   line-height: 1.5;
   width: 20vw;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -1592,7 +1592,7 @@ body {
   }
 
   .officialtejiproduct {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
 
   .html-embed {
