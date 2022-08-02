@@ -50,7 +50,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 53vw;
-  height: 35vh;
+  min-height: 35vh;
   border: solid 0.5vw black;
   text-align: center;
   box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.88);
@@ -129,7 +129,7 @@
   #error-popup,
   #status-popup {
     width: 75vw;
-    height: 15vh;
+    min-height: 25vh;
     border-width: 5px;
   }
 
