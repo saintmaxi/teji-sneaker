@@ -15,6 +15,10 @@ body {
   z-index: 99999;
 }
 
+.bold-text-4 {
+  font-family: "Helvetica Bold";
+}
+
 #account:hover {
   background-color: #ff0882;
 }
@@ -41,7 +45,25 @@ body {
 }
 
 #mint-now-button {
+  font-family: "Helvetica Bold";
+  font-size: 2.4vw;
+  line-height: 1.5;
   width: 20vw;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.officialtejiproduct {
+  font-family: "Helvetica Bold";
+  font-size: 0.9vw !important;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 15vw;
 }
 
 .officialtejiproduct.bg-imgs {
@@ -65,7 +87,10 @@ body {
 }
 
 #mint-button {
-  width: 50%;
+  font-family: "Helvetica Bold";
+  min-width: 40%;
+  font-size: 2vw;
+  line-height: 1;
 }
 
 .centerwrapper {
@@ -130,7 +155,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border: 2px solid #000;
+  border: 3px solid #000;
   border-radius: 0px;
   background-color: #f6ff01;
   -o-object-fit: fill;
@@ -200,6 +225,7 @@ body {
 }
 
 .paragraphwarningtext {
+  margin-top: 0;
   margin-right: 100px;
   margin-bottom: 0px;
   margin-left: 20px;
@@ -345,12 +371,12 @@ body {
   font-size: 1.3vw;
   line-height: 1;
   text-align: center;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 50px;
+  padding: 40px;
   padding-bottom: 10px;
   padding-top: 10px;
   background-color: #f6ff00;
-  border: 2.5px solid black;
+  border: 3px solid black;
   color: black;
 }
 
@@ -477,6 +503,7 @@ body {
   font-size: 1.5vw;
   line-height: 2.5;
   text-transform: uppercase;
+  font-family: "Helvetica Bold";
 }
 
 .price {
@@ -505,7 +532,7 @@ body {
   margin-bottom: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  border: 5px solid #000;
+  border: 3px solid #000;
   border-radius: 50px;
   background-color: #f6ff01;
   color: #000;
@@ -549,8 +576,7 @@ body {
   line-height: 2.5.5vw;
   padding-top: 5px;
   padding-bottom: 5px;
-  border: 2px solid #000;
-  border-radius: 20px;
+  border: 3px solid #000;
   background-color: #f6ff01;
   color: #000;
   /* font-size: 14px; */
@@ -600,7 +626,7 @@ body {
   position: absolute;
   left: auto;
   top: 0%;
-  right: 0%;
+  right: 10%;
   bottom: auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -672,7 +698,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 1vw;
-  line-height: 1.3;
+  /* line-height: 1.3; */
+  font-family: "Helvetica Bold";
 }
 
 .subheadingfreeshipping {
@@ -854,6 +881,7 @@ body {
 }
 
 .upperinternalwrapper {
+  font-family: "Helvetica Bold";
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -883,6 +911,7 @@ body {
 .rangetextlower {
   letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: "Helvetica Bold";
 }
 
 .bold-text-5 {
@@ -1165,6 +1194,22 @@ body {
 
   #mint-button {
     width: initial;
+    min-width: 70%;
+    margin-top: 5px;
+    font-size: 2.5vh;
+  }
+
+  #mint-now-button {
+    font-size: 3.3vh;
+    line-height: 1.5;
+  }
+
+  .officialtejiproduct {
+    font-size: 1.5vh !important;
+    line-height: 1.5;
+    width: initial;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 
   .pricediv {
@@ -1190,12 +1235,12 @@ body {
 
   .paragraph-description {
     width: 98%;
-    border-radius: 20px;
-    padding: 5px;
+    border-radius: 50px;
+    padding: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     background-color: #f6ff00;
-    border: 2px solid black;
+    border: 3px solid black;
     color: black;
     font-size: 2.7vh;
     line-height: 1;
@@ -1440,9 +1485,10 @@ body {
   }
 
   .mintstatusdiv {
-    top: 7%;
+    top: 10%;
     width: 30%;
     height: 30%;
+    right: 5%;
   }
 
   .subheadingfreeshipping {
