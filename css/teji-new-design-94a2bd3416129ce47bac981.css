@@ -1136,6 +1136,11 @@ body {
 
   .html-embed {
     top: 40px;
+    text-align: center;
+  }
+
+  .html-embed img {
+    width: 70%;
   }
 
   .stamp {
