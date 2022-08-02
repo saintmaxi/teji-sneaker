@@ -13,6 +13,22 @@ body {
   display: none !important;
 }
 
+.stamp.bg-imgs {
+  width: 14vw;
+}
+
+#mint-button {
+  width: 20vw;
+}
+
+.officialtejiproduct.bg-imgs {
+  width: 14vw;
+}
+
+.bg-imgs {
+  width: 7vw;
+}
+
 .centerwrapper {
   position: relative;
   left: auto;
@@ -178,11 +194,12 @@ body {
 
 .stamp {
   position: absolute;
-  left: 135px;
-  top: 230px;
+  left: 0;
+  top: 0;
   right: auto;
   bottom: auto;
   z-index: 2;
+  max-width: 250px;
 }
 
 .landingsection {
@@ -286,7 +303,8 @@ body {
 
 .paragraph-description {
   max-width: 40ch;
-  font-size: 16px;
+  font-size: 1.3vw;
+  line-height: 1;
   text-align: center;
 }
 
@@ -503,8 +521,8 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex !important;
-  width: 250px;
-  height: 70px;
+  min-width: 15vw;
+  min-height: 100px;
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -512,6 +530,11 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.socialiconswrapper img {
+  width: 3vw;
+  height: 3vw;
 }
 
 .socialiconswrapper img:hover {
@@ -959,9 +982,6 @@ body {
   height: initial;
 }
 
-.backdrop-img {
-}
-
 /* end saintmaxi styling */
 
 @media screen and (min-width: 1280px) {
@@ -1086,6 +1106,21 @@ body {
 @media screen and (max-width: 991px) {
   /* saintmaxi styling */
 
+  .paragraph-description {
+    max-width: 40ch;
+    font-size: 2.3vh;
+    line-height: 1;
+    text-align: center;
+  }
+
+  #mint-button {
+    width: 50vw;
+  }
+
+  .officialtejiproduct.bg-imgs {
+    width: 35vw;
+  }
+
   .buttonconnectwallet {
     margin-top: 20px;
     font-size: 14px;
@@ -1110,7 +1145,12 @@ body {
     height: 35px;
   }
 
-  .backdrop-img {
+  .stamp.bg-imgs {
+    width: 25vw;
+  }
+
+  .bg-imgs {
+    width: 20vw;
   }
 
   .paragraphdiv strong {
@@ -1126,6 +1166,13 @@ body {
     padding-bottom: 15px;
     margin: auto;
     position: initial;
+    min-height: 70px;
+    min-width: 250px;
+  }
+
+  .socialiconswrapper img {
+    width: 40px;
+    height: 40px;
   }
 
   /* end saintmaxi styling */
