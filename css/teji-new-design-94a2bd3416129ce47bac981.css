@@ -1107,8 +1107,8 @@ body {
   /* saintmaxi styling */
 
   .paragraph-description {
-    max-width: 40ch;
-    font-size: 2.3vh;
+    max-width: 95vw;
+    font-size: 2.7vh;
     line-height: 1;
     text-align: center;
   }
