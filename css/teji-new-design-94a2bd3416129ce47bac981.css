@@ -1087,6 +1087,7 @@ body {
   /* saintmaxi styling */
 
   .buttonconnectwallet {
+    margin-top: 20px;
     font-size: 14px;
     line-height: 1;
   }

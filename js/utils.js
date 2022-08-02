@@ -16,6 +16,10 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function toggleMintPopup() {
+    $("#mint-pop-up").toggle().css('display', 'none');
+}
+
 // function revealMint() {
 //     $("#about").addClass("fading-out");
 //     $('#about').on("animationend", function () {
