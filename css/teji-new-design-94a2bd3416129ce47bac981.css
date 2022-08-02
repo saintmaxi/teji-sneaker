@@ -32,8 +32,17 @@ body {
   right: 5px;
 }
 
+.close:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .bg-imgs {
   width: 7vw;
+}
+
+#mint-button {
+  width: 50%;
 }
 
 .centerwrapper {
@@ -1130,6 +1139,10 @@ body {
 
 @media screen and (max-width: 991px) {
   /* saintmaxi styling */
+
+  #mint-button {
+    width: initial;
+  }
 
   .pricediv {
     position: initial;

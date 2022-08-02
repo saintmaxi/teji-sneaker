@@ -27,8 +27,8 @@
 }
 
 #loading-popup {
-  border: solid 0.5vw black;
-  background-color: rgb(223, 221, 221);
+  border: solid 2px black;
+  background-color: #f6ff00;
   padding: 5vw;
   z-index: 99999;
   position: fixed;
@@ -43,7 +43,7 @@
 
 #error-popup,
 #status-popup {
-  background-color: rgb(223, 221, 221);
+  background-color: #f6ff00;
   z-index: 99999;
   position: fixed;
   top: 50%;
@@ -51,7 +51,7 @@
   transform: translate(-50%, -50%);
   width: 53vw;
   min-height: 35vh;
-  border: solid 0.5vw black;
+  border: solid 10px black;
   text-align: center;
   box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.88);
 }
