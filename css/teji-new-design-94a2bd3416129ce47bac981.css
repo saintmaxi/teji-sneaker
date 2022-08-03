@@ -89,6 +89,7 @@ body {
 
 #mint-button-wrapper {
   min-width: 80%;
+  text-align: center;
 }
 
 #mint-button-wrapper button {

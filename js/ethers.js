@@ -172,11 +172,18 @@ const checkIfWhitelisted = async () => {
     let userAddress = await getAddress();
     if (whitelist.includes(userAddress)) {
         $("#whitelist-button").removeClass("hidden");
+        $("#mint-button-wrapper").css("text-align", "left");
     }
     else {
         $("#whitelist-button").addClass("hidden");
         $("#whitelist-button").prop("onclick", "");
         $("#whitelist-button").addClass("disabled");
+        if ($(window).width() <= 991) {
+            $("#mint-button-wrapper").css("text-align", "center");
+        }
+        else {
+            $("#mint-button-wrapper").css("text-align", "left");
+        }
     }
 }
 
@@ -261,6 +268,7 @@ const updateMintInfo = async () => {
     $("#num-minted").html(minted);
     if (minted >= MAX_SUPPLY) {
         $("#right-pop-up > div.paragraphdiv > p > .bold-text-2").html(`Public mint sold out.<br>Available on secondary on <a href="${openseaLink}" target="_blank" class="link">Opensea</a>.<br>Join the <a href="https://discord.gg/TXtPXkWjSv" target="_blank" class="link">Tejiverse Discord</a> to<br class="hide-on-desktop">claim your physical sneakers.`);
+        $("#quantity-controls").remove();
         $("#mint-button").remove();
         $("#whitelist-button").remove();
         $("#right-pop-up > div.rangediv").remove();
@@ -365,9 +373,9 @@ ethereum.on("accountsChanged", async (accounts_) => {
 window.onload = async () => {
     if ((await getAddress())) {
         await updateInfo();
+        await checkIfWhitelisted();
         await setPrice();
         await updateMintInfo();
-        await checkIfWhitelisted();
         // await checkMintingLive();
     }
 };
