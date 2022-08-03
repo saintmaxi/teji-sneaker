@@ -1057,37 +1057,6 @@ body {
 
 /* saintmaxi styling */
 
-#quantity-controls {
-  text-align: center;
-  margin: 0;
-  width: 100%;
-}
-
-#max-button {
-  font-family: "Helvetica Bold";
-  width: 25%;
-}
-
-.increment-button {
-  width: 15%;
-  font-size: calc(25px + 3vw) !important;
-  line-height: calc(25px + 3vw) !important;
-  background-color: transparent;
-  transition: all ease 300ms;
-}
-
-.increment-button:hover {
-  opacity: 0.8;
-  /* color: #ffe25f; */
-}
-
-#number-to-mint {
-  font-size: calc(30px + 3vw) !important;
-  line-height: calc(30px + 3vw) !important;
-  letter-spacing: 5px;
-  font-weight: bolder;
-}
-
 .hide-on-mobile {
   display: block !important;
 }
@@ -1229,6 +1198,38 @@ body {
 
 @media screen and (max-width: 991px) {
   /* saintmaxi styling */
+
+  #quantity-controls {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  #max-button {
+    font-family: "Helvetica Bold";
+    width: 25%;
+  }
+
+  .increment-button {
+    width: 25%;
+    font-size: calc(25px + 3vw) !important;
+    line-height: calc(25px + 3vw) !important;
+    background-color: transparent;
+    transition: all ease 300ms;
+  }
+
+  .increment-button:hover {
+    opacity: 0.8;
+    /* color: #ffe25f; */
+  }
+
+  #number-to-mint {
+    font-size: calc(30px + 3vw) !important;
+    line-height: calc(30px + 3vw) !important;
+    width: 20%;
+    letter-spacing: 5px;
+    display: inline-block;
+  }
 
   #mint-button-wrapper {
     margin-top: 20px;
