@@ -187,8 +187,15 @@
                   class="link">CryptoPhunk</a> or <a href="https://opensea.io/collection/tejiverse" target="_blank"
                   class="link">TEJI</a> holder.</strong></p>
           </div>
+          <p class="main-paragraph hide-on-desktop" id="quantity-controls">
+            <button class="increment-button" id="mint-minus" onclick="decrementClaim();updatePrice()">–</button>
+            <span id="number-to-mint">1</span>
+            <button class="increment-button" id="mint-plus" onclick="incrementClaim();updatePrice()">+</button>
+            <br><br class="hide-on-desktop">
+            <button class="button" id="max-button" onclick="setMaxMint()">MAX</button>
+          </p>
           <div class="rangediv">
-            <div class="rangewrapper">
+            <div class="rangewrapper hide-on-mobile">
               <div id="range-wrapper" class="range-subwrapper">
                 <div class="mintnumberswrapper">
                   <div><strong>1</strong></div>
@@ -197,8 +204,9 @@
                   <div><strong>4</strong></div>
                   <div><strong>5</strong></div>
                 </div>
-                <div id="range-box" class="range-box w-embed"><input id="number-to-mint" type="range" value="1"
-                    class="slider" name="minitng-quantity" min="1" max="5" onchange="updatePrice();toggleFocus()">
+                <div id="range-box" class="range-box w-embed">
+                  <input id="number-to-mint" type="range" value="1" class="slider" name="minitng-quantity" min="1"
+                    max="5" onchange="setNumberToMint(this.value);updatePrice();">
                   <style>
                     .slider {
                       -webkit-appearance: none;
@@ -212,7 +220,7 @@
                       cursor: pointer;
                     }
 
-                    /* 
+
                     .slider::-webkit-slider-thumb {
                       -webkit-appearance: none;
                       appearance: none;
@@ -229,7 +237,7 @@
                       border-radius: 50%;
                       background: #000000;
                       cursor: pointer;
-                    } */
+                    }
                   </style>
                 </div>
                 <div class="subrangetextwrapper">

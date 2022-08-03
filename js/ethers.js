@@ -81,13 +81,41 @@ const getChainId = async () => {
 
 // ============ MINTING CONTROLS ===============
 
+let numberToMint = 1;
+
+function setNumberToMint(val) {
+    numberToMint = val;
+}
+
+function decrementClaim() {
+    let currentClaim = numberToMint;
+    if (currentClaim > 1) {
+        numberToMint -= 1;
+        $("#number-to-mint").text(numberToMint);
+        updatePrice();
+    }
+}
+
+const setMaxMint = async () => {
+    numberToMint = MAX_MINT;
+    $("#number-to-mint").text(numberToMint);
+    updatePrice();
+}
+
+function incrementClaim() {
+    let max = MAX_MINT;
+    if (numberToMint != max) {
+        numberToMint += 1;
+        $("#number-to-mint").text(numberToMint);
+        updatePrice();
+    }
+}
+
 const updatePrice = async () => {
-    let currentClaim = Number($("#number-to-mint").val());
-    $("#current-cost").text(`${(priceEth * currentClaim).toFixed(1)} Ξ`);
+    $("#current-cost").text(`${(priceEth * numberToMint).toFixed(1)} Ξ`);
 }
 
 const mint = async () => {
-    const numberToMint = Number($("#number-to-mint").val());
     const minted = Number(await nft.totalSupply());
     try {
         if (minted == MAX_SUPPLY) {
