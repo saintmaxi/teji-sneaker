@@ -259,7 +259,7 @@ const setPrice = async () => {
 const updateMintInfo = async () => {
     let minted = Number(await nft.totalSupply());
     $("#num-minted").html(minted);
-    if (minted <= MAX_SUPPLY) {
+    if (minted >= MAX_SUPPLY) {
         $("#right-pop-up > div.paragraphdiv > p > .bold-text-2").html(`Public mint sold out.<br>Available on secondary on <a href="${openseaLink}" target="_blank" class="link">Opensea</a>.<br>Join the <a href="https://discord.gg/TXtPXkWjSv" target="_blank" class="link">Tejiverse Discord</a> to<br class="hide-on-desktop">claim your physical sneakers.`);
         $("#mint-button").remove();
         $("#whitelist-button").remove();
