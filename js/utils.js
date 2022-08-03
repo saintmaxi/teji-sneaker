@@ -55,6 +55,11 @@ async function displayResultPopup(result) {
     }
 }
 
+function toggleFocus() {
+    console.log("focusing")
+    $("#mint-button").focus();
+}
+
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }

@@ -198,7 +198,7 @@
                   <div><strong>5</strong></div>
                 </div>
                 <div id="range-box" class="range-box w-embed"><input id="number-to-mint" type="range" value="1"
-                    class="slider" name="minitng-quantity" min="1" max="5" onchange="updatePrice()">
+                    class="slider" name="minitng-quantity" min="1" max="5" onchange="updatePrice();toggleFocus()">
                   <style>
                     .slider {
                       -webkit-appearance: none;
@@ -236,10 +236,10 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div id="mint-button-wrapper" class="buttonwrapper">
-            <button id="mint-button" data-w-id="9b76b23c-f7cb-c792-5323-67141e77da8b" href="#" class="button w-button"
-              onclick="mint()"><strong class="bold-text">MINT NOW</strong></button>
+            <div id="mint-button-wrapper" class="buttonwrapper">
+              <button id="mint-button" data-w-id="9b76b23c-f7cb-c792-5323-67141e77da8b" href="#" class="button w-button"
+                onclick="mint()"><strong class="bold-text">MINT NOW</strong></button>
+            </div>
           </div>
         </div>
       </div>

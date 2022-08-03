@@ -23,9 +23,10 @@ body {
   background-color: #ff0882;
 }
 
-#account.connected:hover {
+#account.connected:hover,
+.officialtejiproduct:hover {
   cursor: default !important;
-  background-color: #f6ff00;
+  background-color: #f6ff00 !important;
 }
 
 .link {
