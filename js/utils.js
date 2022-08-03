@@ -43,7 +43,7 @@ async function displayResultPopup(result) {
             <div class="sucesswrapper">
               <div class="upperinternalwrappersucess">
                 <h1 class="headingsucesspopup"><strong class="bold-text-5">Nice!</strong></h1>
-                <h1 class="heading-2">please proceed to the <a href="https://discord.gg/TXtPXkWjSv" target="_blank" class="link">tejiverse discord</a><br>to claim your physical sneaker</h1>
+                <h1 class="heading-2">please proceed to the <a href="https://discord.gg/TXtPXkWjSv" target="_blank" class="link">tejiverse discord</a><br>to claim your physical sneakers</h1>
                 <h3 class="heading-3">(claim opens shortly after sell out)</h3>
               </div>
             </div>

@@ -87,11 +87,29 @@ body {
   width: 7vw;
 }
 
-#mint-button {
+#mint-button-wrapper {
+  min-width: 80%;
+}
+
+#mint-button-wrapper button {
+  display: inline-block;
+}
+
+#mint-button,
+#whitelist-button {
   font-family: "Helvetica Bold";
   min-width: 40%;
   font-size: 2vw;
   line-height: 1;
+}
+
+#whitelist-button.disabled {
+  background-color: rgb(183, 181, 181);
+}
+
+#whitelist-button.disabled:hover {
+  background-color: rgb(183, 181, 181) !important;
+  cursor: default !important;
 }
 
 .centerwrapper {
@@ -547,6 +565,7 @@ body {
 }
 
 .bold-text {
+  font-family: "Helvetica Bold";
   color: #000;
   font-size: 1em;
 }
@@ -841,10 +860,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -1239,9 +1258,10 @@ body {
     padding: 20px;
   }
 
-  #mint-button {
+  #mint-button,
+  #whitelist-button {
     width: initial;
-    min-width: 70%;
+    min-width: 40%;
     margin-top: 5px;
     font-size: 2.5vh;
   }
