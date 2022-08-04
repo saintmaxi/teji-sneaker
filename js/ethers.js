@@ -17,8 +17,7 @@
 // const correctChain = 1;
 // const MAX_MINT = 5;
 // const MAX_SUPPLY = 500;
-// const openseaLink = "https://opensea.io/collection/significant-others";
-// const looksrareLink = "https://looksrare.org/collections/0x6659F3B08403C11a2d98B4beC0027c1E41844283";
+// const openseaLink = "";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
@@ -40,7 +39,6 @@ const correctChain = 4;
 const MAX_MINT = 5;
 const MAX_SUPPLY = 500;
 const openseaLink = "#";
-const looksrareLink = "#";
 
 /*********************************END CONFIG************************************/
 

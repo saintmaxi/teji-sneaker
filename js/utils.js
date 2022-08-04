@@ -1,22 +1,22 @@
 async function displayErrorMessage(message, timed = true) {
-    if (!($("#error-popup").length)) {
-        let fakeJSX = `<div id="error-popup"><p>${message}</p></div>`;
-        $("body").append(fakeJSX);
-        let height = $(document).height();
-        $("body").append(`<div id='block-screen-error' style="height:${height}px"></div>`);
-        if (timed) {
-            await sleep(2500);
-            $("#error-popup").remove();
-            $("#block-screen-error").remove();
-        }
+  if (!($("#error-popup").length)) {
+    let fakeJSX = `<div id="error-popup"><p>${message}</p></div>`;
+    $("body").append(fakeJSX);
+    let height = $(document).height();
+    $("body").append(`<div id='block-screen-error' style="height:${height}px"></div>`);
+    if (timed) {
+      await sleep(2500);
+      $("#error-popup").remove();
+      $("#block-screen-error").remove();
     }
+  }
 }
 
 async function displayResultPopup(result) {
-    if (!($("#result-pop-up").length)) {
-        let resultJSX;
-        if (result == 0) {
-            resultJSX = `<div id="result-pop-up" class=" sucesspopup">
+  if (!($("#result-pop-up").length)) {
+    let resultJSX;
+    if (result == 0) {
+      resultJSX = `<div id="result-pop-up" class=" sucesspopup">
             <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleResultPopup()" class="close" width="20"
               viewBox="0 0 320 512">
               <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -31,9 +31,9 @@ async function displayResultPopup(result) {
               </div>
             </div>
           </div>`;
-        }
-        else if (result == 1) {
-            resultJSX = `<div id="result-pop-up" class=" sucesspopup">
+    }
+    else if (result == 1) {
+      resultJSX = `<div id="result-pop-up" class=" sucesspopup">
             <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleResultPopup()" class="close" width="20"
               viewBox="0 0 320 512">
               <!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -48,29 +48,29 @@ async function displayResultPopup(result) {
               </div>
             </div>
           </div>`;
-        }
-        let height = $(document).height();
-        $("#main-section").append(resultJSX);
-        $("#main-section").append(`<div id='block-screen-status' onclick="toggleResultPopup()" style="height:${height}px"></div>`);
     }
+    let height = $(document).height();
+    $("#main-section").append(resultJSX);
+    $("#main-section").append(`<div id='block-screen-status' onclick="toggleResultPopup()" style="height:${height}px"></div>`);
+  }
 }
 
 function toggleFocus() {
-    console.log("focusing")
-    $("#mint-button").focus();
+  console.log("focusing")
+  $("#mint-button").focus();
 }
 
 function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function toggleMintPopup() {
-    $("#mint-pop-up").toggle().css('display', 'none');
+  $("#mint-pop-up").toggleClass("hidden");
 }
 
 function toggleResultPopup() {
-    $("#result-pop-up").remove();
-    $("#block-screen-status").remove();
+  $("#result-pop-up").remove();
+  $("#block-screen-status").remove();
 }
 
 // function revealMint() {
