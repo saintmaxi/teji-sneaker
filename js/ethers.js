@@ -269,7 +269,7 @@ const updateMintInfo = async () => {
 
 const updateCurrentChain = async () => {
     if ((await getChainId()) !== correctChain) {
-        displayErrorMessage("Error: Wrong Network!", false);
+        displayErrorMessage("Error: Wrong Network! Switch to Ethereum Mainnet.", false);
     }
     else {
         $("#error-popup").remove();
@@ -280,8 +280,7 @@ const updateCurrentChain = async () => {
 provider.on("network", async (newNetwork, oldNetwork) => {
     if (oldNetwork) {
         $("#refresh-notification").remove();
-        await updateCurrentChain();
-        await updateMintInfo();
+        location.reload();
     }
 });
 
@@ -364,6 +363,7 @@ ethereum.on("accountsChanged", async (accounts_) => {
 
 window.onload = async () => {
     if ((await getAddress())) {
+        await updateCurrentChain();
         await updateInfo();
         await checkIfWhitelisted();
         await setPrice();
