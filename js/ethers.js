@@ -163,7 +163,8 @@ const mint = async () => {
             await displayErrorMessage(`Error: Insuffient ETH to mint!`)
         }
         else {
-            await displayErrorMessage("An error occurred. See console and window alert for details...")
+            await displayErrorMessage(`An error occurred. See window alert for details. If using a Ledger, open Settings on Ethereum App.
+            Enable Blind Signing + Display Debug Data`);
             window.alert(error);
             console.log(error);
         }
@@ -223,7 +224,8 @@ const whitelistMint = async () => {
             console.log("Transaction rejected.");
         }
         else {
-            await displayErrorMessage("An error occurred. See console and window alert for details...")
+            await displayErrorMessage(`An error occurred. See window alert for details. If using a Ledger, open Settings on Ethereum App.
+            Enable Blind Signing + Display Debug Data`);
             window.alert(error);
             console.log(error);
         }
