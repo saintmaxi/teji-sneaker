@@ -164,8 +164,8 @@ const mint = async () => {
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
-            console.log(error);
+            window.alert(error.toString());
+            console.log(error.toString());
         }
     }
 }
@@ -224,8 +224,8 @@ const whitelistMint = async () => {
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
-            console.log(error);
+            window.alert(error.toString());
+            console.log(error.toString());
         }
     }
 }
