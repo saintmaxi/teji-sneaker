@@ -165,8 +165,8 @@ const mint = async () => {
         else {
             await displayErrorMessage(`An error occurred. See window alert for details. If using a Ledger, open Settings on Ethereum App.
             Enable Blind Signing + Display Debug Data`);
-            window.alert(error);
-            console.log(error);
+            window.alert(error.toString());
+            console.log(error.toString());
         }
     }
 }
@@ -226,8 +226,8 @@ const whitelistMint = async () => {
         else {
             await displayErrorMessage(`An error occurred. See window alert for details. If using a Ledger, open Settings on Ethereum App.
             Enable Blind Signing + Display Debug Data`);
-            window.alert(error);
-            console.log(error);
+            window.alert(error.toString());
+            console.log(error.toString());
         }
     }
 }
