@@ -5,7 +5,7 @@ async function displayErrorMessage(message, timed = true) {
     let height = $(document).height();
     $("body").append(`<div id='block-screen-error' style="height:${height}px"></div>`);
     if (timed) {
-      await sleep(2500);
+      await sleep(4000);
       $("#error-popup").remove();
       $("#block-screen-error").remove();
     }
