@@ -27,7 +27,7 @@ const etherscanBase = `https://etherscan.io/tx/`;
 const correctChain = 1;
 const MAX_MINT = 5;
 const MAX_SUPPLY = 500;
-const openseaLink = "https://opensea.io/collection/phunk-force-1-by-teji";
+const openseaLink = "https://opensea.io/collection/phunk-force-1-v2-by-teji";
 
 /*********************************************************************************/
 /********************************DEV CONFIG********************************/
