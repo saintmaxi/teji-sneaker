@@ -63,8 +63,8 @@ const openseaLink = "https://opensea.io/collection/phunk-force-1-v2-by-teji";
 /*********************************END CONFIG************************************/
 
 if (window.ethereum == undefined) {
-    $("#mint-button").attr("onclick", `displayErrorMessage('Use a web3 enabled browser like MetaMask/Coinbase to mint!')`);
-    $("#account").attr("onclick", `displayErrorMessage('Use a web3 enabled browser like MetaMask/Coinbase to connect!')`);
+    $("#mint-button").attr("onclick", `displayErrorMessage('Use a web3-enabled browser like MetaMask/Coinbase to mint!')`);
+    $("#account").attr("onclick", `displayErrorMessage('Use a web3-enabled browser like MetaMask/Coinbase to connect!')`);
 }
 
 const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
